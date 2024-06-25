@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import Heading from "./ui/heading";
+import Heading from "./ui/title";
 import { Button } from "./ui/button";
 
 export const Services = ({
