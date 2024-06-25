@@ -3,6 +3,8 @@ import { EmblaOptionsType } from "embla-carousel";
 import { Navbar } from "@/components/navbar";
 import { Separator } from "@/components/ui/separator";
 import Courses from "@/components/courses";
+import AboutSppu from "@/components/about-sppu";
+import AboutBlockChain from "@/components/about-blockchain";
 
 export default function Home() {
   const OPTIONS: EmblaOptionsType = { loop: true };
@@ -30,6 +32,8 @@ export default function Home() {
         </div>
 
         <Courses />
+        <AboutSppu />
+        <AboutBlockChain />
       </div>
     </>
   );

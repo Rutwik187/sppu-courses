@@ -13,7 +13,7 @@ import Title from "./ui/title";
 
 export default function Courses() {
   return (
-    <div className="mt-16">
+    <div className="mt-16 mx-4">
       <Title>Course Section</Title>
 
       <div className="flex gap-6 items-center">
