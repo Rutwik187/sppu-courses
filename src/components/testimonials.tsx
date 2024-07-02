@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const Testimonials = () => {
   return (
-    <div className="max-w-5xl mx-auto mt-32">
+    <div className="max-w-6xl mx-auto ">
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -24,26 +24,26 @@ const Testimonials = () => {
       >
         {[1, 2, 3, 4, 5, 6].map((item) => (
           <SwiperSlide>
-            <Card className="text-start border-none">
-              <CardHeader className="flex flex-row gap-4 items-center translate-y-1/3">
+            <div className="text-start border-none shadow-none">
+              <CardHeader className="flex flex-row gap-2 items-center translate-y-1/3">
                 <Image
                   src="/testimonial1.png"
                   alt="testimonial"
                   width={100}
                   height={100}
                 />
-                <div className="flex flex-col ">
+                <div className="flex flex-col mb-2">
                   <p className="text-base font-semibold">Shri Ramesh Bais</p>
                   <p className="text-sm">Chancellor</p>
                 </div>
               </CardHeader>
-              <CardContent className="bg-secondary rounded-md px-2 py-8">
+              <CardContent className="bg-secondary rounded-md px-8 py-8 shadow-md">
                 "The Governor as Chancellor plays a very constructive role in
                 the administration of the Universities. The Chancellor being the
                 Governor can help to insulate the Universities from unnecessary
                 governmental interference and safeguard their autonomy.
               </CardContent>
-            </Card>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

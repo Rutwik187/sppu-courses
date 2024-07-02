@@ -3,13 +3,10 @@ import React, { useCallback } from "react";
 import { EmblaOptionsType, EmblaCarouselType } from "embla-carousel";
 
 import { DotButton, useDotButton } from "./carousel-dot-buttons";
-import {
-  PrevButton,
-  NextButton,
-  usePrevNextButtons,
-} from "./carousel-arrow-buttons";
+
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
+import Image from "next/image";
 
 type PropType = {
   slides: number[];
@@ -42,8 +39,16 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{index + 1}</div>
+            <div className="embla__slide shadow-md" key={index}>
+              <div className="embla__slide__number">
+                <Image
+                  src="/hero-complete.png"
+                  alt="hero"
+                  width={1000}
+                  height={1000}
+                  className="w-full h-full object-cover  rounded-md"
+                />
+              </div>
             </div>
           ))}
         </div>
