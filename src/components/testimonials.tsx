@@ -23,7 +23,7 @@ const Testimonials = () => {
         className="mySwiper"
       >
         {[1, 2, 3, 4, 5, 6].map((item) => (
-          <SwiperSlide>
+          <SwiperSlide key={item}>
             <div className="text-start border-none shadow-none">
               <CardHeader className="flex flex-row gap-2 items-center translate-y-1/3">
                 <Image
@@ -38,8 +38,8 @@ const Testimonials = () => {
                 </div>
               </CardHeader>
               <CardContent className="bg-secondary rounded-md px-8 py-8 shadow-md">
-                "The Governor as Chancellor plays a very constructive role in
-                the administration of the Universities. The Chancellor being the
+                The Governor as Chancellor plays a very constructive role in the
+                administration of the Universities. The Chancellor being the
                 Governor can help to insulate the Universities from unnecessary
                 governmental interference and safeguard their autonomy.
               </CardContent>
