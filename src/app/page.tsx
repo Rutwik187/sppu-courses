@@ -5,7 +5,11 @@ import { Separator } from "@/components/ui/separator";
 import Courses from "@/components/courses";
 import AboutSppu from "@/components/about-sppu";
 import AboutBlockChain from "@/components/about-blockchain";
-import WhyChooseUs from "@/components/ui/why-choose-us";
+import WhyChooseUs from "@/components/why-choose-us";
+import Stats from "@/components/stats";
+import ImpDates from "@/components/imp-dates";
+import EnquireNow from "@/components/enqire-now";
+import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   const OPTIONS: EmblaOptionsType = { loop: true };
@@ -36,6 +40,10 @@ export default function Home() {
         <AboutSppu />
         <AboutBlockChain />
         <WhyChooseUs />
+        <Stats />
+        <ImpDates />
+        <EnquireNow />
+        <Testimonials />
       </div>
     </>
   );

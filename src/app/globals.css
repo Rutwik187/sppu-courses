@@ -202,3 +202,10 @@
   box-shadow: inset 0 0 0 0.2rem var(--text-body);
   background-color: var(--text-body);
 }
+
+/* Swiper.js */
+.swiper {
+  overflow: visible;
+  overflow-y: visible !important;
+  overflow-x: hidden !important;
+}

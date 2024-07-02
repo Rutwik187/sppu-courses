@@ -1,60 +1,43 @@
-import NumberTicker from "./ui/number-ticker";
+import Title from "./ui/title";
 
 const Stats = () => {
+  const stats = [
+    {
+      title: "Courses",
+      value: "20+",
+      description: "Available",
+    },
+    {
+      title: "Admission",
+      value: "2000+",
+      description: "Enrolled",
+    },
+    {
+      title: "Students",
+      value: "8000+",
+      description: "Passed",
+    },
+    {
+      title: "Students",
+      value: "8000+",
+      description: "Passed",
+    },
+  ];
+
   return (
-    <section className=" bg-gray-100 py-10  sm:py-16 lg:py-20">
-      <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-            Numbers tell our story
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
-          <div>
-            <h3 className="font-bold text-7xl">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                {" "}
-                <NumberTicker value={10} />
-              </span>
-            </h3>
-            <p className="mt-4 text-xl font-medium text-gray-900">
-              Years in business
-            </p>
-            <p className="text-base mt-0.5 text-gray-500">
-              Creating the successful path
-            </p>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-7xl">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                <NumberTicker value={4821} />
-              </span>
-            </h3>
-            <p className="mt-4 text-xl font-medium text-gray-900">
-              Projects delivered
-            </p>
-            <p className="text-base mt-0.5 text-gray-500">In last 6 years</p>
-          </div>
-
-          <div>
-            <h3 className="font-bold text-7xl">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-600 to-blue-600">
-                {" "}
-                <NumberTicker value={85} />
-              </span>
-            </h3>
-            <p className="mt-4 text-xl font-medium text-gray-900">
-              Team members
-            </p>
-            <p className="text-base mt-0.5 text-gray-500">
-              Working for your success
-            </p>
-          </div>
+    <div>
+      <div className="  mt-16 ">
+        <div className="bg-navy p-4 rounded-md flex gap-16 items-center justify-center">
+          {stats.map((stat, index) => (
+            <div className="text-center flex flex-col gap-4" key={index}>
+              <Title>{stat.title}</Title>
+              <p className="text-3xl font-bold text-white">{stat.value}</p>
+              <p className="text-base text-white">{stat.description}</p>
+            </div>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

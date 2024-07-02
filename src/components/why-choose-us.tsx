@@ -1,5 +1,5 @@
 import { Network, Puzzle, Projector, HelpCircleIcon } from "lucide-react";
-import Title from "./title";
+import Title from "./ui/title";
 
 const WhyChooseUs = () => {
   const services = [
