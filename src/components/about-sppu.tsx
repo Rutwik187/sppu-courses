@@ -20,7 +20,7 @@ const AboutSppu = () => {
             <Title className="text-left">
               About Savitribai Phule Pune University{" "}
             </Title>
-            <p className="max-w-lg text-sm leading-relaxed text-gray-600 ">
+            <p className="max-w-lg text-sm leading-relaxed text-gray-600 text-justify">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&rsquo;s standard dummy
               text ever since the 1500s, when an unknown printer took a galley

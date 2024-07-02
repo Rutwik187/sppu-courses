@@ -12,7 +12,7 @@ const AboutBlockChain = () => {
             <Title className="text-left">
               About Savitribai Phule Pune University{" "}
             </Title>
-            <p className="max-w-lg text-sm leading-relaxed text-gray-600 ">
+            <p className="max-w-lg text-sm leading-relaxed text-gray-600 text-justify">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry&rsquo;s standard dummy
               text ever since the 1500s, when an unknown printer took a galley
@@ -30,10 +30,10 @@ const AboutBlockChain = () => {
             </div>
           </div>
 
-          <div className="relative pl-20 pr-6 sm:pl-6 md:px-0">
-            <div className="relative w-full max-w-xs mt-4 mb-10 ">
+          <div className="relative pl-20 pr-6 sm:pl-6 md:px-0 m-auto">
+            <div className="relative w-full max-w-xs xl:mx-auto 2xl:origin-bottom 2xl:scale-110 ">
               <Image
-                src="/about-Blockchain.png"
+                src="/about-blockchain.png"
                 alt="sppu"
                 width={1000}
                 height={1000}

@@ -5,6 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import Courses from "@/components/courses";
 import AboutSppu from "@/components/about-sppu";
 import AboutBlockChain from "@/components/about-blockchain";
+import WhyChooseUs from "@/components/ui/why-choose-us";
 
 export default function Home() {
   const OPTIONS: EmblaOptionsType = { loop: true };
@@ -17,7 +18,7 @@ export default function Home() {
 
       <Separator className="my-4" />
 
-      <div className="flex h-5 items-center justify-center space-x-4 text-sm">
+      <div className="flex h-5 items-center justify-center space-x-4 text-sm gap-8">
         <div className="font-bold">Updates</div>
         <Separator orientation="vertical" />
         <div className="font-bold">Important Dates</div>
@@ -34,6 +35,7 @@ export default function Home() {
         <Courses />
         <AboutSppu />
         <AboutBlockChain />
+        <WhyChooseUs />
       </div>
     </>
   );
