@@ -11,6 +11,8 @@ import ImpDates from "@/components/imp-dates";
 import EnquireNow from "@/components/enqire-now";
 import Testimonials from "@/components/testimonials";
 import Announcements from "@/components/announcements";
+import Footer from "@/components/footer";
+import ContactUs from "@/components/contact-us";
 
 export default function Home() {
   const OPTIONS: EmblaOptionsType = { loop: true };
@@ -35,6 +37,8 @@ export default function Home() {
         <ImpDates />
         <EnquireNow />
         <Testimonials />
+        <ContactUs />
+        <Footer />
       </div>
     </>
   );
