@@ -13,6 +13,7 @@ import Testimonials from "@/components/testimonials";
 import Announcements from "@/components/announcements";
 import Footer from "@/components/footer";
 import ContactUs from "@/components/contact-us";
+import { MobileNav } from "@/components/mobile-nav";
 
 export default function Home() {
   const OPTIONS: EmblaOptionsType = { loop: true };
@@ -23,9 +24,9 @@ export default function Home() {
     <>
       <Announcements />
       <Navbar />
-
+      <MobileNav />
       <div className="max-w-7xl mx-auto">
-        <div className=" mx-auto mt-12 flex flex-col gap-10  sm:gap-16 lg:gap-20">
+        <div className=" mx-auto md:mt-6 flex flex-col gap-10  sm:gap-16 lg:gap-20">
           <EmblaCarousel slides={SLIDES} options={OPTIONS} />
         </div>
 

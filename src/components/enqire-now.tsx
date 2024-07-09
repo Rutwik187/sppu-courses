@@ -4,9 +4,9 @@ import { Button } from "./ui/button";
 
 const EnquireNow = () => {
   return (
-    <div className="mt-16  max-w-3xl mx-auto  ">
-      <div className="flex  rounded-md shadow-2xl">
-        <div className="bg-navy flex  flex-col pt-12 w-[90%] shadow-2xl  rounded-l-md">
+    <div className="mt-16  max-w-3xl md:mx-auto mx-4  ">
+      <div className="flex  rounded-md shadow-2xl md:flex-nowrap flex-wrap ">
+        <div className="bg-navy flex  flex-col pt-12 w-full md:w-[90%] shadow-2xl rounded-t-md md:rounded-l-md">
           <Title className="text-white mx-4 my-2">
             Unlock Your Career Potential
           </Title>
@@ -21,8 +21,8 @@ const EnquireNow = () => {
             <Image src="/dot-logo.png" width={80} height={80} alt="sppu logo" />
           </div>
         </div>
-        <div className="bg-primary flex items-center justify-center max-w-20 shadow-md  rounded-r-md">
-          <p className="rotate-90 text-center w-full text-base transform whitespace-nowrap shadow-2xl">
+        <div className="bg-primary flex items-center justify-center w-full md:max-w-20 shadow-md rounded-b-md md:rounded-r-md h-16 md:h-auto ">
+          <p className="md:rotate-90 text-center md:text-base transform whitespace-nowrap shadow-2xl text-3xl ">
             Enquire Now
           </p>
         </div>

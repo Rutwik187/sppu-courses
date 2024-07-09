@@ -5,13 +5,13 @@ const ImpDates = () => {
     <div className="mt-16">
       <Title>Important Dates</Title>
       {[1, 2, 3, 4].map((item, index) => (
-        <ul key={index} className="max-w-2xl mx-auto">
+        <ul key={index} className="max-w-2xl mx-auto px-4">
           <li>
             <div className="flex items-center justify-between">
               <p className="text-blue-400">
                 Post Graduate Diploma in Blockchain Technology
               </p>
-              <p>12-Dec-203</p>
+              <p className="min-w-28">12-Dec-203</p>
             </div>
           </li>
           <hr className="my-4 text-gray-900" />

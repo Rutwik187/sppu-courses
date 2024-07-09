@@ -27,7 +27,7 @@ const Stats = () => {
   return (
     <div>
       <div className="  mt-16 ">
-        <div className="bg-navy p-4 rounded-md flex gap-16 items-center justify-center">
+        <div className="bg-navy p-4 rounded-md flex gap-16 items-center justify-center flex-wrap pb-8">
           {stats.map((stat, index) => (
             <div className="text-center flex flex-col gap-4" key={index}>
               <Title>{stat.title}</Title>

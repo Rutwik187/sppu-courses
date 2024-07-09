@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4  max-w-5xl mx-auto  mt-8">
           {services.map((service, index) => (
             <div
-              className="bg-secondary shadow-md rounded-md flex  items-center justify-center p-8 gap-4"
+              className="bg-secondary shadow-md rounded-md flex  items-center md:justify-center justify-start p-8 gap-4"
               key={index}
             >
               <div>{service.icon}</div>

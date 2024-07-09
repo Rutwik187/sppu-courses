@@ -9,15 +9,15 @@ const AboutSppu = () => {
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid items-center grid-cols-1 md:grid-cols-2">
           <Image
-            className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
+            className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110 md:p-6 "
             src="/sppu-building.jpg"
             alt="sppu"
-            width={100}
-            height={100}
+            width={1000}
+            height={1000}
           />
 
           <div className="text-left flex gap-4 flex-col">
-            <Title className="text-left">
+            <Title className="md:text-left text-center">
               About Savitribai Phule Pune University{" "}
             </Title>
             <p className="max-w-lg text-sm leading-relaxed text-gray-600 text-justify">

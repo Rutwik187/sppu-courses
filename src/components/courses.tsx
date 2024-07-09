@@ -16,10 +16,10 @@ export default function Courses() {
     <div className="mt-16 mx-4">
       <Title>Course Section</Title>
 
-      <div className="flex gap-6 items-center">
+      <div className="flex gap-6 items-center flex-wrap">
         {[1, 2, 3].map((item) => {
           return (
-            <Card key={item} className="w-[433px] ">
+            <Card key={item} className="w-[400px] ">
               <CardHeader className="p-4">
                 <div className="h-[161px] overflow-hidden rounded-t-md mb-4">
                   <Image

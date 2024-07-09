@@ -88,11 +88,9 @@
 }
 
 .embla {
-  /* height: 90vh; */
-
   margin: 0 3rem;
 
-  --slide-height: 70vh;
+  --slide-height: 75vh;
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
@@ -202,4 +200,14 @@
 .swiper-button-prev:after,
 .swiper-button-next:after {
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .embla {
+    margin: 0 1rem;
+
+    --slide-height: 70vh;
+    --slide-spacing: 1rem;
+    --slide-size: 100%;
+  }
 }
