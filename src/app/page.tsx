@@ -21,26 +21,21 @@ export default function Home() {
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 
   return (
-    <>
-      <Announcements />
-      <Navbar />
-      <MobileNav />
-      <div className="max-w-7xl mx-auto">
-        <div className=" mx-auto md:mt-6 flex flex-col gap-10  sm:gap-16 lg:gap-20">
-          <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-        </div>
-
-        <Courses />
-        <AboutSppu />
-        <AboutBlockChain />
-        <WhyChooseUs />
-        <Stats />
-        <ImpDates />
-        <EnquireNow />
-        <Testimonials />
-        <ContactUs />
-        <Footer />
+    <div className=" mx-auto">
+      <div className=" mx-auto md:mt-6 flex flex-col gap-10  sm:gap-16 lg:gap-20">
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </div>
-    </>
+
+      <Courses />
+      <AboutSppu />
+      <AboutBlockChain />
+      <WhyChooseUs />
+      <Stats />
+      <ImpDates />
+      <EnquireNow />
+      <Testimonials />
+      <ContactUs />
+      <Footer />
+    </div>
   );
 }

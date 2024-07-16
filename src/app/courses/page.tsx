@@ -1,9 +1,17 @@
-import { MobileNav } from "@/components/mobile-nav";
+import CareerGrowth from "@/components/courses/career-growth";
+import CoursesOfferings from "@/components/courses/cources-offerings";
+import CourseIntro from "@/components/courses/course-intro";
+import CourseSnapshot from "@/components/courses/course-snapshot";
+import CourseTrack from "@/components/courses/course-track";
 
 const Page = () => {
   return (
     <div>
-      <MobileNav />
+      <CourseIntro />
+      <CourseSnapshot />
+      <CoursesOfferings />
+      <CourseTrack />
+      <CareerGrowth />
     </div>
   );
 };

@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Monda } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "@/components/navbar";
+import { MobileNav } from "@/components/mobile-nav";
+import Announcements from "@/components/announcements";
+import { cn } from "@/lib/utils";
 
 const inter = Monda({ weight: "400", subsets: ["vietnamese"] });
-
-export const metadata: Metadata = {
-  title: "SPPU Blockchain Courses",
-  description: "Explore new range of blockchain courses",
-};
 
 export default function RootLayout({
   children,
@@ -16,7 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, "max-w-7xl mx-auto")}>
+        <Announcements />
+        <Navbar />
+        <MobileNav />
+        {children}
+      </body>
     </html>
   );
 }
