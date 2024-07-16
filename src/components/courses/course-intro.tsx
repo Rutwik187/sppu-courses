@@ -7,14 +7,14 @@ const CourseIntro = () => {
     <div className="relative flex flex-col md:flex-row items-center md:items-stretch max-w-6xl mx-auto px-4 py-8">
       <div className="z-10 w-full md:w-2/3 bg-white rounded-3xl shadow-md p-6 md:pr-12">
         <p className="text-sm text-gray-600">
-          Savitribai Phule Pune University
+          Savitribai Phule Pune University&apos;s
         </p>
         <Title className="text-start text-black my-4">
           Professional Certification Program in Ethics in AI
         </Title>
         <ul className="list-disc pl-5 mt-4 text-sm md:text-base space-y-2">
           <li>Work in AI with most demanded Ethics required by Industry</li>
-          <li>Learn from India's #1 State University</li>
+          <li>Learn from India&apos;s #1 State University</li>
           <li>Get Certified from Savitribai Phule Pune University</li>
         </ul>
         <div className="mt-6 flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">

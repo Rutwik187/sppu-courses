@@ -3,6 +3,7 @@ import CoursesOfferings from "@/components/courses/cources-offerings";
 import CourseIntro from "@/components/courses/course-intro";
 import CourseSnapshot from "@/components/courses/course-snapshot";
 import CourseTrack from "@/components/courses/course-track";
+import SuccessStories from "@/components/courses/success-stories";
 
 const Page = () => {
   return (
@@ -11,7 +12,8 @@ const Page = () => {
       <CourseSnapshot />
       <CoursesOfferings />
       <CourseTrack />
-      <CareerGrowth />
+      {/* <CareerGrowth />
+      <SuccessStories /> */}
     </div>
   );
 };
