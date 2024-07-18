@@ -34,8 +34,6 @@ export default function Home() {
       <ImpDates />
       <EnquireNow />
       <Testimonials />
-      <ContactUs />
-      <Footer />
     </div>
   );
 }

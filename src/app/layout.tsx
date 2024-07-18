@@ -5,6 +5,8 @@ import { Navbar } from "@/components/navbar";
 import { MobileNav } from "@/components/mobile-nav";
 import Announcements from "@/components/announcements";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/footer";
+import ContactUs from "@/components/contact-us";
 
 const inter = Monda({ weight: "400", subsets: ["vietnamese"] });
 
@@ -20,6 +22,8 @@ export default function RootLayout({
         <Navbar />
         <MobileNav />
         {children}
+        <ContactUs />
+        <Footer />
       </body>
     </html>
   );

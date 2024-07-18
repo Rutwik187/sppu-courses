@@ -40,7 +40,7 @@ const CourseOfferings = () => {
         <h1 className="text-3xl font-bold">
           What Does This
           <br />
-          <span className="text-orange-500">Course Have To Offer?</span>
+          <span className="text-primary">Course Have To Offer?</span>
         </h1>
       </div>
 
@@ -50,7 +50,7 @@ const CourseOfferings = () => {
             <TabsTrigger
               key={item}
               value={item}
-              className="justify-start px-4 py-2 text-left text-sm hover:bg-white data-[state=active]:bg-white data-[state=active]:shadow-md rounded"
+              className="justify-start px-4 py-2 text-left text-sm font-medium text-gray-500 hover:text-gray-700 data-[state=active]:text-black data-[state=active]:border-b-2 data-[state=active]:border-black"
             >
               {item}
             </TabsTrigger>
