@@ -12,9 +12,10 @@ const CertificationCard = () => {
           Professional Certification Programme in Ethics in AI
         </p>
         <p className="mb-6 text-gray-600 text-sm sm:text-base">
-          Upon successfully completing this program, you'll earn a Postgraduate
-          degree in Data Science and Analytics certificate. This certification
-          will add considerable value to your professional credentials.
+          Upon successfully completing this program, you&apos;ll earn a
+          Postgraduate degree in Data Science and Analytics certificate. This
+          certification will add considerable value to your professional
+          credentials.
         </p>
         <Button className="w-full sm:w-auto bg-primary hover:bg-orange-600 text-white">
           Enroll Now
